@@ -92,3 +92,51 @@ if (projectModal && projectTiles.length) {
     }
   });
 }
+
+// Certificate lightbox
+const certCards = document.querySelectorAll('.cert-card');
+const certLightbox = document.getElementById('cert-lightbox');
+const certLightboxImage = document.getElementById('cert-lightbox-image');
+const certLightboxTitle = document.getElementById('cert-lightbox-title');
+const certLightboxOrg = document.getElementById('cert-lightbox-org');
+const certLightboxDate = document.getElementById('cert-lightbox-date');
+const certLightboxSep = document.getElementById('cert-lightbox-sep');
+const certLightboxCloseEls = document.querySelectorAll('[data-close-cert-lightbox]');
+
+if (certLightbox && certCards.length) {
+  const openCertLightbox = card => {
+    certLightboxImage.src = card.dataset.certSrc;
+    certLightboxImage.alt = card.dataset.certTitle;
+    certLightboxTitle.textContent = card.dataset.certTitle;
+    certLightboxOrg.textContent = card.dataset.certOrg;
+    certLightboxDate.textContent = card.dataset.certDate;
+    certLightboxSep.style.display = (card.dataset.certOrg && card.dataset.certDate) ? '' : 'none';
+    certLightbox.classList.add('open');
+    certLightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeCertLightbox = () => {
+    certLightbox.classList.remove('open');
+    certLightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  certCards.forEach(card => {
+    card.addEventListener('click', () => openCertLightbox(card));
+    card.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openCertLightbox(card);
+      }
+    });
+  });
+
+  certLightboxCloseEls.forEach(el => el.addEventListener('click', closeCertLightbox));
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && certLightbox.classList.contains('open')) {
+      closeCertLightbox();
+    }
+  });
+}
