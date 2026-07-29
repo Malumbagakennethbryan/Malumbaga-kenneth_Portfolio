@@ -1,673 +1,517 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Kenneth Bryan Malumbaga — Developer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Kenneth Bryan D. Malumbaga, an Information Technology graduate focused on backend development, database management, QA testing, and IT support.">
+  <title>Kenneth Bryan D. Malumbaga | Backend Developer & QA Tester</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="cursor" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
 
-<div id="cursor"></div>
-<div id="cursor-ring"></div>
-
-<!-- ─── NAV ─── -->
-<nav>
-  <a href="#home" class="nav-logo">
-    <!-- MK Logo SVG inline -->
-    <svg class="mk-logo-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M18 90 L18 30 Q18 20 28 20 Q33 20 38 26 L60 58 L82 26 Q87 20 92 20 Q102 20 102 30 L102 50" stroke="#22c55e" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M60 55 L100 90" stroke="#22c55e" stroke-width="13" stroke-linecap="round"/>
-      <path d="M60 55 L65 48" stroke="#22c55e" stroke-width="13" stroke-linecap="round"/>
-      <path d="M100 55 L60 90" stroke="#22c55e" stroke-width="13" stroke-linecap="round"/>
-    </svg>
-    <span class="nav-name">Kenneth Bryan</span>
-  </a>
-
-  <div class="nav-center">
-    <a href="#home" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certificates">Certificates</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <div class="nav-right">
-    <span class="status-dot">Available for work</span>
-  </div>
-</nav>
-
-<!-- ─── HERO ─── -->
-<section id="home">
-  <div class="hero-glow"></div>
-
-  <div class="hero-left">
-    <div class="eyebrow">
-      <div class="eyebrow-line"></div>
-      <span>Backend Developer · Davao City, PH</span>
-    </div>
-
-    <h1 class="hero-title">
-      <span class="name-dim">Kenneth Bryan</span>
-      Malum<span class="name-green">baga</span>
-    </h1>
-
-    <p class="hero-bio">
-      Building efficient, reliable systems and functional web applications. I focus on clean backend architecture, quality code, and continuous growth as a developer.
-    </p>
-
-    <div class="hero-actions">
-      <a href="#projects" class="btn-solid">
-        <svg viewBox="0 0 20 20" fill="currentColor" width="15" height="15"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        View Projects
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#home" class="nav-logo" aria-label="Kenneth Bryan D. Malumbaga home">
+        <svg class="mk-logo-svg" viewBox="0 0 120 120" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 90 L18 30 Q18 20 28 20 Q33 20 38 26 L60 58 L82 26 Q87 20 92 20 Q102 20 102 30 L102 50" stroke="#22c55e" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M60 55 L100 90" stroke="#22c55e" stroke-width="13" stroke-linecap="round"/>
+          <path d="M60 55 L65 48" stroke="#22c55e" stroke-width="13" stroke-linecap="round"/>
+          <path d="M100 55 L60 90" stroke="#22c55e" stroke-width="13" stroke-linecap="round"/>
+        </svg>
+        <span class="nav-name">Kenneth Bryan</span>
       </a>
-      <a href="#contact" class="btn-outline">Get in Touch</a>
-    </div>
 
-    <div class="hero-scroll">
-      <div class="hero-scroll-line"></div>
-      Scroll to explore
-    </div>
-  </div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <div class="hero-right">
-    <div class="hero-panel">
-      <!-- Big MK logo display -->
-      <div class="mk-hero-logo">
-        <img src="assets/Profile 1.png" alt="" class="hero-profile-bg" aria-hidden="true">
-        <img src="assets/Profile 1.png" alt="Portrait of Kenneth Bryan Malumbaga" class="hero-profile-photo">
+      <div class="nav-center" id="nav-menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
       </div>
 
-      <div class="info-block fade-up d1">
-        <div class="info-block-icon">
-          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+      <div class="nav-right">
+        <span class="status-dot">Available for work</span>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="hero-left reveal">
+        <div class="eyebrow">
+          <div class="eyebrow-line" aria-hidden="true"></div>
+          <span>Information Technology Graduate</span>
         </div>
-        <div>
-          <div class="info-block-label">Location</div>
-          <div class="info-block-value">Davao City, Philippines</div>
+
+        <h1 id="hero-title" class="hero-title">
+          <span>Kenneth Bryan</span>
+          D. Malum<span>baga</span>
+        </h1>
+
+        <p class="hero-role">Backend Developer &bull; QA Tester &bull; IT Support</p>
+        <p class="hero-bio">
+          I am an Information Technology graduate with experience in backend development, database management, QA testing, and IT support. I enjoy building reliable systems, solving technical problems, and continuously improving my technical skills.
+        </p>
+
+        <div class="hero-actions" aria-label="Primary actions">
+          <a href="assets/resume/KENNETH%20BRYAN%20MALUMBAGA%20RESUME.pdf" class="btn-solid" target="_blank" rel="noopener" aria-label="Open Kenneth Malumbaga resume PDF in a new tab">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M4 3a2 2 0 012-2h5l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2V3zm7 0v4h4M7 12h6M7 15h6M7 9h2"/></svg>
+            View Resume / CV
+          </a>
+          <a href="#projects" class="btn-outline">View Projects</a>
+        </div>
+
+        <div class="career-strip" aria-label="Career focus">
+          <span>PHP Developer</span>
+          <span>Laravel Developer</span>
+          <span>QA Tester</span>
+          <span>Desktop Support</span>
         </div>
       </div>
-      <div class="info-block fade-up d2">
-        <div class="info-block-icon">
-          <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z"/></svg>
-        </div>
-        <div>
-          <div class="info-block-label">Education</div>
-          <div class="info-block-value">BSIT — Davao del Norte State College</div>
-        </div>
-      </div>
 
-      <div class="stat-row fade-up d3">
-        <div class="stat-box">
-          <span class="n">4+</span>
-          <span class="l">Projects</span>
-        </div>
-        <div class="stat-box">
-          <span class="n">5+</span>
-          <span class="l">Tech Stack</span>
-        </div>
-        <div class="stat-box">
-          <span class="n">1</span>
-          <span class="l">Internship</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── ABOUT ─── -->
-<section id="about" class="section">
-  <div class="section-inner">
-    <div class="s-label">
-      <span class="s-label-num">01</span>
-      <div class="s-label-line"></div>
-      <span class="s-label-text">About Me</span>
-    </div>
-    <h2 class="s-title">Driven by <em>curiosity</em>,<br><span class="dim">fueled by code</span></h2>
-
-    <div class="about-layout">
-      <div class="about-portrait fade-up">
-        <div class="portrait-box">
-          <img src="assets/profile 2.png" alt="Kenneth Bryan Malumbaga" class="about-profile-photo">
-        </div>
-        <div class="portrait-accent"></div>
-        <div class="portrait-accent2"></div>
-      </div>
-
-      <div class="about-text fade-up d1">
-        <p>I'm a 22-year-old developer from Davao City, Philippines, with a passion for building efficient systems and functional websites. I thrive on solving complex problems and delivering quality solutions that make a real difference.</p>
-        <p>With a solid foundation in both backend and frontend technologies, I approach every project with attention to detail and a commitment to clean, maintainable code. My experience spans building full-stack web applications to exploring workflow automation with n8n.</p>
-        <p>I believe in continuous learning and staying current with industry best practices — whether it's architecting a database schema, crafting responsive interfaces, or automating repetitive workflows.</p>
-
-        <div class="about-tags">
-          <span class="about-tag">PHP</span>
-          <span class="about-tag">MySQL</span>
-          <span class="about-tag">JavaScript</span>
-          <span class="about-tag">HTML & CSS</span>
-          <span class="about-tag">REST APIs</span>
-          <span class="about-tag">n8n</span>
-          <span class="about-tag">Responsive Design</span>
-        </div>
-
-        <div class="about-details">
-          <div class="detail-item">
-            <div class="dl">Age</div>
-            <div class="dv">22 years old</div>
+      <div class="hero-right reveal d1">
+        <div class="hero-panel" aria-label="Profile summary">
+          <div class="mk-hero-logo">
+            <img src="assets/images/Profile 1.png" alt="" class="hero-profile-bg" aria-hidden="true">
+            <img src="assets/images/Profile 1.png" alt="Portrait of Kenneth Bryan D. Malumbaga" class="hero-profile-photo">
           </div>
-          <div class="detail-item">
-            <div class="dl">City</div>
-            <div class="dv">Davao City, PH</div>
-          </div>
-          <div class="detail-item">
-            <div class="dl">Education</div>
-            <div class="dv">BSIT, DNSC</div>
-          </div>
-          <div class="detail-item">
-            <div class="dl">Status</div>
-            <div class="dv" style="color:var(--g);">Open to opportunities</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ─── SKILLS ─── -->
-<section id="skills" class="section">
-  <div class="section-inner">
-    <div class="s-label">
-      <span class="s-label-num">02</span>
-      <div class="s-label-line"></div>
-      <span class="s-label-text">Skills</span>
-    </div>
-    <h2 class="s-title">What I <em>work with</em></h2>
-
-    <div class="skills-layout">
-      <div class="skill-panel fade-up">
-        <div class="skill-panel-head">
-          <span class="skill-panel-title">Frontend</span>
-          <span class="skill-panel-badge">UI / UX</span>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span class="bar-name">HTML</span><span class="bar-val">90%</span></div>
-          <div class="bar-track"><div class="bar-fill c-blue" data-w="90"></div></div>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span class="bar-name">CSS</span><span class="bar-val">85%</span></div>
-          <div class="bar-track"><div class="bar-fill c-blue" data-w="85"></div></div>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span class="bar-name">JavaScript</span><span class="bar-val">80%</span></div>
-          <div class="bar-track"><div class="bar-fill c-blue" data-w="80"></div></div>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span class="bar-name">Responsive Design</span><span class="bar-val">85%</span></div>
-          <div class="bar-track"><div class="bar-fill c-blue" data-w="85"></div></div>
-        </div>
-      </div>
-
-      <div class="skill-panel fade-up d1">
-        <div class="skill-panel-head">
-          <span class="skill-panel-title">Backend</span>
-          <span class="skill-panel-badge">Server / DB</span>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span class="bar-name">PHP</span><span class="bar-val">85%</span></div>
-          <div class="bar-track"><div class="bar-fill c-green" data-w="85"></div></div>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span class="bar-name">MySQL</span><span class="bar-val">80%</span></div>
-          <div class="bar-track"><div class="bar-fill c-green" data-w="80"></div></div>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span class="bar-name">REST APIs</span><span class="bar-val">70%</span></div>
-          <div class="bar-track"><div class="bar-fill c-green" data-w="70"></div></div>
-        </div>
-      </div>
-
-      <div class="skill-panel fade-up d2">
-        <div class="skill-panel-head">
-          <span class="skill-panel-title">Web Development</span>
-          <span class="skill-panel-badge">Full-stack</span>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span class="bar-name">Full-Stack Apps</span><span class="bar-val">80%</span></div>
-          <div class="bar-track"><div class="bar-fill c-amber" data-w="80"></div></div>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span class="bar-name">Database Design</span><span class="bar-val">78%</span></div>
-          <div class="bar-track"><div class="bar-fill c-amber" data-w="78"></div></div>
-        </div>
-      </div>
-
-      <div class="skill-panel fade-up d3">
-        <div class="skill-panel-head">
-          <span class="skill-panel-title">Automation</span>
-          <span class="skill-panel-badge">Workflow</span>
-        </div>
-        <div class="bar-item">
-          <div class="bar-meta"><span class="bar-name">n8n</span><span class="bar-val">50%</span></div>
-          <div class="bar-track"><div class="bar-fill c-rose" data-w="50"></div></div>
-        </div>
-        <div style="margin-top: 20px; padding: 16px; background: rgba(251,113,133,0.05); border: 1px solid rgba(251,113,133,0.12); border-radius: 8px;">
-          <p style="font-size:12px;color:var(--text2);line-height:1.7;font-family:'JetBrains Mono',monospace;letter-spacing:0.02em;">Currently deepening knowledge in workflow automation through hands-on study and project practice.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── PROJECTS ─── -->
-<section id="projects" class="section">
-  <div class="section-inner">
-    <div class="s-label">
-      <span class="s-label-num">03</span>
-      <div class="s-label-line"></div>
-      <span class="s-label-text">Projects</span>
-    </div>
-    <h2 class="s-title">Things I've <em>built</em></h2>
-
-    <div class="projects-grid">
-      <div class="project-tile fade-up" role="button" tabindex="0" data-project-title="Brunch Food Order System" data-project-type="School Project" data-project-image="assets/1.png" data-project-description="A food ordering system designed for restaurant operations, enabling customers to browse menus, place orders, and manage their selections seamlessly." data-project-details="This project focuses on restaurant order flow. It includes menu browsing, order selection, customer order handling, and a simple management flow for keeping restaurant transactions organized." data-project-stack="PHP, MySQL, HTML, CSS, JavaScript">
-        <div class="project-tile-num">
-          01 / 04
-          <span class="p-badge">School Project</span>
-        </div>
-        <div class="project-photo">
-          <img src="assets/1.png" alt="Brunch Food Order System preview">
-        </div>
-        <div class="project-tile-name">Brunch Food Order System</div>
-        <div class="project-tile-desc">A food ordering system designed for restaurant operations, enabling customers to browse menus, place orders, and manage their selections seamlessly.</div>
-        <div class="project-tile-stack">
-          <span class="stack-pill">PHP</span>
-          <span class="stack-pill">MySQL</span>
-          <span class="stack-pill">HTML</span>
-          <span class="stack-pill">CSS</span>
-          <span class="stack-pill">JavaScript</span>
-        </div>
-        <div class="project-tile-arrow">
-          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-        </div>
-      </div>
-
-      <div class="project-tile fade-up d1" role="button" tabindex="0" data-project-title="BookSphere" data-project-type="School Project" data-project-image="assets/2.png" data-project-description="A comprehensive bookstore management system for inventory tracking, sales processing, and customer management with a clean, organized interface." data-project-details="BookSphere was built to help manage bookstore operations. The system supports organized inventory records, customer information, sales tracking, and a cleaner workflow for handling bookstore data." data-project-stack="PHP, MySQL, HTML, CSS, JavaScript">
-        <div class="project-tile-num">
-          02 / 04
-          <span class="p-badge">School Project</span>
-        </div>
-        <div class="project-photo">
-          <img src="assets/2.png" alt="BookSphere preview">
-        </div>
-        <div class="project-tile-name">BookSphere</div>
-        <div class="project-tile-desc">A comprehensive bookstore management system for inventory tracking, sales processing, and customer management with a clean, organized interface.</div>
-        <div class="project-tile-stack">
-          <span class="stack-pill">PHP</span>
-          <span class="stack-pill">MySQL</span>
-          <span class="stack-pill">HTML</span>
-          <span class="stack-pill">CSS</span>
-          <span class="stack-pill">JavaScript</span>
-        </div>
-        <div class="project-tile-arrow">
-          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-        </div>
-      </div>
-
-      <div class="project-tile fade-up d2" role="button" tabindex="0" data-project-title="Panabo Fitness Gym System" data-project-type="School Project" data-project-image="assets/3.png" data-project-description="A gym management system handling member registrations, membership tracking, scheduling, and payment processing for fitness facility operations." data-project-details="This system is designed for fitness facility administration. It helps manage member registration, membership records, schedules, and payment-related information in one structured interface." data-project-stack="PHP, MySQL, HTML, CSS">
-        <div class="project-tile-num">
-          03 / 04
-          <span class="p-badge">School Project</span>
-        </div>
-        <div class="project-photo">
-          <img src="assets/3.png" alt="Panabo Fitness Gym System preview">
-        </div>
-        <div class="project-tile-name">Panabo Fitness Gym System</div>
-        <div class="project-tile-desc">A gym management system handling member registrations, membership tracking, scheduling, and payment processing for fitness facility operations.</div>
-        <div class="project-tile-stack">
-          <span class="stack-pill">PHP</span>
-          <span class="stack-pill">MySQL</span>
-          <span class="stack-pill">HTML</span>
-          <span class="stack-pill">CSS</span>
-        </div>
-        <div class="project-tile-arrow">
-          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-        </div>
-      </div>
-
-      <div class="project-tile fade-up d3" role="button" tabindex="0" data-project-title="TaskFlow" data-project-type="Internship Project" data-project-image="assets/4.png" data-project-description="A task management system built during internship, featuring project organization, task assignment, progress tracking, and team collaboration tools." data-project-details="TaskFlow was created for team task organization during internship work. It supports assigning tasks, tracking progress, grouping work by project, and helping team members stay aligned on responsibilities." data-project-stack="PHP, MySQL, HTML, CSS, JavaScript">
-        <div class="project-tile-num">
-          04 / 04
-          <span class="p-badge p-badge-internship">Internship Project</span>
-        </div>
-        <div class="project-photo">
-          <img src="assets/4.png" alt="TaskFlow preview">
-        </div>
-        <div class="project-tile-name">TaskFlow</div>
-        <div class="project-tile-desc">A task management system built during internship, featuring project organization, task assignment, progress tracking, and team collaboration tools.</div>
-        <div class="project-tile-stack">
-          <span class="stack-pill">PHP</span>
-          <span class="stack-pill">MySQL</span>
-          <span class="stack-pill">HTML</span>
-          <span class="stack-pill">CSS</span>
-          <span class="stack-pill">JavaScript</span>
-        </div>
-        <div class="project-tile-arrow">
-          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="project-modal" id="project-modal" aria-hidden="true">
-  <div class="project-modal-backdrop" data-close-project-modal></div>
-  <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
-    <button class="project-modal-close" type="button" aria-label="Close project preview" data-close-project-modal>
-      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-    </button>
-    <div class="project-modal-image-wrap">
-      <img src="" alt="" id="project-modal-image">
-    </div>
-    <div class="project-modal-content">
-      <div class="project-modal-type" id="project-modal-type"></div>
-      <h3 id="project-modal-title"></h3>
-      <p id="project-modal-description"></p>
-      <div class="project-modal-details">
-        <span>Project Details</span>
-        <p id="project-modal-details"></p>
-      </div>
-      <div class="project-modal-stack" id="project-modal-stack"></div>
-    </div>
-  </div>
-</div>
-
-<!-- ─── CERTIFICATES ─── -->
-<section id="certificates" class="section">
-  <div class="section-inner">
-    <div class="s-label">
-      <span class="s-label-num">04</span>
-      <div class="s-label-line"></div>
-      <span class="s-label-text">Trainings &amp; Seminar Certificates</span>
-    </div>
-    <h2 class="s-title">Recognized <em>achievements</em></h2>
-
-    <div class="cert-grid">
-
-      <div class="cert-card fade-up" role="button" tabindex="0"
-           data-cert-image="assets/cert 1.png"
-           data-cert-title="Cybersecurity Essentials"
-           data-cert-type="Cisco"
-           data-cert-org="Cisco Networking Academy — Davao del Norte State College"
-           data-cert-date="May 21, 2025">
-        <div class="cert-img-wrap">
-          <img src="assets/cert 1.png" alt="Cybersecurity Essentials certificate" loading="lazy">
-          <div class="cert-overlay">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h4M9 7l3 3 3-3M12 10V3"/></svg>
-            View Certificate
-          </div>
-        </div>
-        <div class="cert-info">
-          <span class="cert-badge">Cisco</span>
-          <div class="cert-name">Cybersecurity Essentials</div>
-          <div class="cert-org">Cisco Networking Academy</div>
-          <div class="cert-date">May 21, 2025</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-up d1" role="button" tabindex="0"
-           data-cert-image="assets/cert 2.png"
-           data-cert-title="Ethical Hacker"
-           data-cert-type="Cisco"
-           data-cert-org="Cisco Networking Academy — Davao del Norte State College"
-           data-cert-date="Dec 04, 2025">
-        <div class="cert-img-wrap">
-          <img src="assets/cert 2.png" alt="Ethical Hacker certificate" loading="lazy">
-          <div class="cert-overlay">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h4M9 7l3 3 3-3M12 10V3"/></svg>
-            View Certificate
-          </div>
-        </div>
-        <div class="cert-info">
-          <span class="cert-badge">Cisco</span>
-          <div class="cert-name">Ethical Hacker</div>
-          <div class="cert-org">Cisco Networking Academy</div>
-          <div class="cert-date">Dec 04, 2025</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-up d2" role="button" tabindex="0"
-           data-cert-image="assets/cert 3.png"
-           data-cert-title="The Power of Color in Graphic Design"
-           data-cert-type="DNSC"
-           data-cert-org="DNSC Advanced Seminar Series — Davao del Norte State College"
-           data-cert-date="Nov 5, 2025">
-        <div class="cert-img-wrap">
-          <img src="assets/cert 3.png" alt="The Power of Color in Graphic Design certificate" loading="lazy">
-          <div class="cert-overlay">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h4M9 7l3 3 3-3M12 10V3"/></svg>
-            View Certificate
-          </div>
-        </div>
-        <div class="cert-info">
-          <span class="cert-badge">DNSC</span>
-          <div class="cert-name">The Power of Color in Graphic Design</div>
-          <div class="cert-org">DNSC Advanced Seminar Series</div>
-          <div class="cert-date">Nov 5, 2025</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-up d3" role="button" tabindex="0"
-           data-cert-image="assets/cert 4.png"
-           data-cert-title="Journey from Science Practitioner to IT Specialist"
-           data-cert-type="DNSC"
-           data-cert-org="DNSC Advanced Seminar Series — Davao del Norte State College"
-           data-cert-date="Oct 8, 2025">
-        <div class="cert-img-wrap">
-          <img src="assets/cert 4.png" alt="Journey from Science Practitioner to IT Specialist certificate" loading="lazy">
-          <div class="cert-overlay">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h4M9 7l3 3 3-3M12 10V3"/></svg>
-            View Certificate
-          </div>
-        </div>
-        <div class="cert-info">
-          <span class="cert-badge">DNSC</span>
-          <div class="cert-name">Journey from Science Practitioner to IT Specialist</div>
-          <div class="cert-org">DNSC Advanced Seminar Series</div>
-          <div class="cert-date">Oct 8, 2025</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-up" role="button" tabindex="0"
-           data-cert-image="assets/cert 5.jpg"
-           data-cert-title="Level 1 DICT Examination"
-           data-cert-type="DNSC"
-           data-cert-org="Davao del Norte State College — Institute of Computing"
-           data-cert-date="Jun 11, 2025">
-        <div class="cert-img-wrap">
-          <img src="assets/cert 5.jpg" alt="Level 1 DICT Examination certificate" loading="lazy">
-          <div class="cert-overlay">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h4M9 7l3 3 3-3M12 10V3"/></svg>
-            View Certificate
-          </div>
-        </div>
-        <div class="cert-info">
-          <span class="cert-badge">DNSC</span>
-          <div class="cert-name">Level 1 DICT Examination</div>
-          <div class="cert-org">DNSC Institute of Computing</div>
-          <div class="cert-date">Jun 11, 2025</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-up d1" role="button" tabindex="0"
-           data-cert-image="assets/cert 6.jfif"
-           data-cert-title="Certificate of Participation"
-           data-cert-type="Level App"
-           data-cert-org="Level App — Stratosfera"
-           data-cert-date="May 2025">
-        <div class="cert-img-wrap">
-          <img src="assets/cert 6.jfif" alt="Certificate of Participation — Level App" loading="lazy">
-          <div class="cert-overlay">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h4M9 7l3 3 3-3M12 10V3"/></svg>
-            View Certificate
-          </div>
-        </div>
-        <div class="cert-info">
-          <span class="cert-badge">Level App</span>
-          <div class="cert-name">Certificate of Participation</div>
-          <div class="cert-org">Level App — Stratosfera</div>
-          <div class="cert-date">May 2025</div>
-        </div>
-      </div>
-
-      <div class="cert-card fade-up d2" role="button" tabindex="0"
-           data-cert-image="assets/cert 7.jpg"
-           data-cert-title="On-the-Job Training (486 Hours)"
-           data-cert-type="Internship"
-           data-cert-org="Nehemiah Solutions Corporation — Software Research &amp; Development"
-           data-cert-date="May 15, 2026">
-        <div class="cert-img-wrap">
-          <img src="assets/cert 7.jpg" alt="On-the-Job Training certificate" loading="lazy">
-          <div class="cert-overlay">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h4M9 7l3 3 3-3M12 10V3"/></svg>
-            View Certificate
-          </div>
-        </div>
-        <div class="cert-info">
-          <span class="cert-badge cert-badge-alt">Internship</span>
-          <div class="cert-name">On-the-Job Training (486 Hours)</div>
-          <div class="cert-org">Nehemiah Solutions Corporation</div>
-          <div class="cert-date">May 15, 2026</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Cert Modal -->
-<div class="cert-modal" id="cert-modal" aria-hidden="true">
-  <div class="cert-modal-backdrop" data-close-cert-modal></div>
-  <div class="cert-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
-    <button class="cert-modal-close" type="button" aria-label="Close certificate" data-close-cert-modal>
-      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-    </button>
-    <div class="cert-modal-image-wrap">
-      <img src="" alt="" id="cert-modal-image">
-    </div>
-    <div class="cert-modal-content">
-      <div class="cert-modal-type" id="cert-modal-type"></div>
-      <h3 id="cert-modal-title"></h3>
-      <p id="cert-modal-org"></p>
-      <div class="cert-modal-date" id="cert-modal-date"></div>
-    </div>
-  </div>
-</div>
-
-<!-- ─── CONTACT ─── -->
-<section id="contact" class="section">
-  <div class="section-inner">
-    <div class="s-label">
-      <span class="s-label-num">05</span>
-      <div class="s-label-line"></div>
-      <span class="s-label-text">Contact</span>
-    </div>
-    <h2 class="s-title">Let's <em>connect</em></h2>
-
-    <div class="contact-layout">
-      <div class="contact-left fade-up">
-        <div class="big-text">Have a project<br>or opportunity?<br><em>Let's talk.</em></div>
-        <p>I'm always open to hearing about internship opportunities, freelance projects, or collaborative work. Send me a message and I'll get back to you.</p>
-
-        <div class="contact-links">
-          <a href="mailto:malumbagakenneth16@gmail.com" class="contact-link">
-            <div class="contact-link-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <div class="info-block">
+            <div class="info-block-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
             </div>
             <div>
-              <div class="contact-link-label">Email</div>
-              <div class="contact-link-value">malumbagakenneth16@gmail.com</div>
+              <div class="info-block-label">Location</div>
+              <div class="info-block-value">Davao City, Philippines</div>
             </div>
-            <span class="contact-link-arrow">→</span>
-          </a>
-          <a href="https://github.com/KennethMalumbaga" target="_blank" rel="noopener" class="contact-link">
-            <div class="contact-link-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
-            </div>
-            <div>
-              <div class="contact-link-label">GitHub</div>
-              <div class="contact-link-value">github.com/KennethMalumbaga</div>
-            </div>
-            <span class="contact-link-arrow">→</span>
-          </a>
-          <a href="https://www.linkedin.com/in/kenneth-bryan-malumbaga-b922a8402/" target="_blank" rel="noopener noreferrer" class="contact-link">
-            <div class="contact-link-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>
+          </div>
+          <div class="info-block">
+            <div class="info-block-icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a1 1 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z"/></svg>
             </div>
             <div>
-              <div class="contact-link-label">LinkedIn</div>
-              <div class="contact-link-value">linkedin.com/in/kenneth-bryan-malumbaga-b922a8402</div>
+              <div class="info-block-label">Education</div>
+              <div class="info-block-value">BSIT - Davao del Norte State College</div>
             </div>
-            <span class="contact-link-arrow">→</span>
-          </a>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="contact-form fade-up d1">
-        <div class="form-title">Send a Message</div>
-        <div class="f-grid">
-          <div class="f-row">
-            <label>Full Name</label>
-            <input type="text" placeholder="Your name">
+    <section id="about" class="section section-alt" aria-labelledby="about-title">
+      <div class="section-inner">
+        <div class="s-label">
+          <span class="s-label-num">01</span>
+          <div class="s-label-line" aria-hidden="true"></div>
+          <span class="s-label-text">About Me</span>
+        </div>
+        <h2 id="about-title" class="s-title">Backend-focused, <em>support-minded</em></h2>
+
+        <div class="about-layout">
+          <div class="about-portrait reveal">
+            <div class="portrait-box">
+              <img src="assets/images/profile 2.png" alt="Kenneth Bryan D. Malumbaga profile photo" class="about-profile-photo" loading="lazy">
+            </div>
+            <div class="portrait-accent" aria-hidden="true"></div>
+            <div class="portrait-accent2" aria-hidden="true"></div>
           </div>
-          <div class="f-row">
-            <label>Email</label>
-            <input type="email" placeholder="your@email.com">
+
+          <div class="about-text reveal d1">
+            <p>I am an Information Technology graduate from Davao City with practical experience in backend development, database management, QA testing, and IT support. My work is centered on building useful systems, keeping data organized, and solving technical issues with patience and accuracy.</p>
+            <p>I am strongest in PHP, Laravel, MySQL, Java, and system logic. I can also work with HTML, CSS, and JavaScript when a project needs a complete working interface, but my main career direction is backend development, quality assurance, database design, and technical support.</p>
+            <p>I value clear documentation, careful testing, and continuous learning. I am interested in roles such as Backend Developer, PHP Developer, Laravel Developer, QA Tester, IT Support, Desktop Support Engineer, and Technical Support.</p>
+
+            <div class="about-tags" aria-label="Key strengths">
+              <span class="about-tag">Backend Development</span>
+              <span class="about-tag">Database Design</span>
+              <span class="about-tag">QA Testing</span>
+              <span class="about-tag">IT Support</span>
+              <span class="about-tag">Problem Solving</span>
+              <span class="about-tag">Continuous Learning</span>
+            </div>
+
+            <div class="about-details">
+              <div class="detail-item">
+                <div class="dl">Degree</div>
+                <div class="dv">BS Information Technology</div>
+              </div>
+              <div class="detail-item">
+                <div class="dl">Primary Focus</div>
+                <div class="dv">Backend / QA / Support</div>
+              </div>
+              <div class="detail-item">
+                <div class="dl">Location</div>
+                <div class="dv">Davao City, PH</div>
+              </div>
+              <div class="detail-item">
+                <div class="dl">Status</div>
+                <div class="dv accent">Open to opportunities</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="f-row">
-          <label>Subject</label>
-          <input type="text" placeholder="What's this about?">
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="section-inner">
+        <div class="s-label">
+          <span class="s-label-num">02</span>
+          <div class="s-label-line" aria-hidden="true"></div>
+          <span class="s-label-text">Skills</span>
         </div>
-        <div class="f-row">
-          <label>Message</label>
-          <textarea placeholder="Tell me about your project, opportunity, or idea..."></textarea>
+        <h2 id="skills-title" class="s-title">Strongest in <em>backend systems</em></h2>
+
+        <div class="skills-layout">
+          <article class="skill-panel priority reveal">
+            <div class="skill-panel-head">
+              <span class="skill-panel-title">Backend Development</span>
+              <span class="skill-panel-badge">Strong</span>
+            </div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">PHP</span><span class="bar-val">90%</span></div><div class="bar-track"><div class="bar-fill c-green" data-w="90"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">Laravel</span><span class="bar-val">88%</span></div><div class="bar-track"><div class="bar-fill c-green" data-w="88"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">MySQL</span><span class="bar-val">90%</span></div><div class="bar-track"><div class="bar-fill c-green" data-w="90"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">Java</span><span class="bar-val">85%</span></div><div class="bar-track"><div class="bar-fill c-green" data-w="85"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">Firebase</span><span class="bar-val">80%</span></div><div class="bar-track"><div class="bar-fill c-green" data-w="80"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">REST API</span><span class="bar-val">82%</span></div><div class="bar-track"><div class="bar-fill c-green" data-w="82"></div></div></div>
+          </article>
+
+          <article class="skill-panel reveal d1">
+            <div class="skill-panel-head">
+              <span class="skill-panel-title">Frontend</span>
+              <span class="skill-panel-badge">Intermediate</span>
+            </div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">HTML</span><span class="bar-val">78%</span></div><div class="bar-track"><div class="bar-fill c-blue" data-w="78"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">CSS</span><span class="bar-val">72%</span></div><div class="bar-track"><div class="bar-fill c-blue" data-w="72"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">JavaScript</span><span class="bar-val">74%</span></div><div class="bar-track"><div class="bar-fill c-blue" data-w="74"></div></div></div>
+          </article>
+
+          <article class="skill-panel reveal d2">
+            <div class="skill-panel-head">
+              <span class="skill-panel-title">Quality Assurance</span>
+              <span class="skill-panel-badge">QA Tester</span>
+            </div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">Manual Testing</span><span class="bar-val">80%</span></div><div class="bar-track"><div class="bar-fill c-amber" data-w="80"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">Bug Reporting</span><span class="bar-val">82%</span></div><div class="bar-track"><div class="bar-fill c-amber" data-w="82"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">Test Case Creation</span><span class="bar-val">75%</span></div><div class="bar-track"><div class="bar-fill c-amber" data-w="75"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">Regression Testing</span><span class="bar-val">72%</span></div><div class="bar-track"><div class="bar-fill c-amber" data-w="72"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">Functional Testing</span><span class="bar-val">78%</span></div><div class="bar-track"><div class="bar-fill c-amber" data-w="78"></div></div></div>
+          </article>
+
+          <article class="skill-panel reveal d3">
+            <div class="skill-panel-head">
+              <span class="skill-panel-title">Tools</span>
+              <span class="skill-panel-badge">Development / Support</span>
+            </div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">Git</span><span class="bar-val">80%</span></div><div class="bar-track"><div class="bar-fill c-rose" data-w="80"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">GitHub</span><span class="bar-val">82%</span></div><div class="bar-track"><div class="bar-fill c-rose" data-w="82"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">VS Code</span><span class="bar-val">90%</span></div><div class="bar-track"><div class="bar-fill c-rose" data-w="90"></div></div></div>
+            <div class="bar-item"><div class="bar-meta"><span class="bar-name">XAMPP</span><span class="bar-val">85%</span></div><div class="bar-track"><div class="bar-fill c-rose" data-w="85"></div></div></div>
+          </article>
         </div>
-        <a href="mailto:malumbagakenneth16@gmail.com" class="btn-solid" style="width:100%;justify-content:center;display:flex;border:none;cursor:pointer;">
-          <svg viewBox="0 0 20 20" fill="currentColor" width="15" height="15"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
-          Send Message
-        </a>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt" aria-labelledby="projects-title">
+      <div class="section-inner">
+        <div class="s-label">
+          <span class="s-label-num">03</span>
+          <div class="s-label-line" aria-hidden="true"></div>
+          <span class="s-label-text">Projects</span>
+        </div>
+        <h2 id="projects-title" class="s-title">Systems I've <em>built and tested</em></h2>
+
+        <div class="projects-grid">
+          <article class="project-tile reveal" tabindex="0"
+            data-project-title="Brunch Food Order System"
+            data-project-type="School Project"
+            data-project-image="assets/images/1.png"
+            data-project-description="A food ordering system for restaurant operations, allowing users to browse menu items, manage selections, and submit orders through an organized workflow."
+            data-project-details="I worked on backend logic, database records, order flow, and interface integration. The project strengthened my PHP, MySQL, CRUD, validation, and manual testing practice."
+            data-project-stack="PHP, MySQL, HTML, CSS, JavaScript"
+            data-project-role="Backend development, database management, manual testing"
+            data-project-github="https://github.com/KennethMalumbaga"
+            data-project-demo="">
+            <div class="project-tile-num">01 / 04 <span class="p-badge">School Project</span></div>
+            <div class="project-photo"><img src="assets/images/1.png" alt="Brunch Food Order System project preview" loading="lazy"></div>
+            <h3 class="project-tile-name">Brunch Food Order System</h3>
+            <p class="project-tile-desc">Food ordering workflow with menu browsing, order handling, and database-backed transaction records.</p>
+            <div class="project-meta"><span>Role</span><strong>Backend / Database / QA</strong></div>
+            <div class="project-tile-stack"><span class="stack-pill">PHP</span><span class="stack-pill">MySQL</span><span class="stack-pill">JavaScript</span></div>
+            <div class="project-actions">
+              <button class="project-detail-btn" type="button">View Details</button>
+              <a href="https://github.com/KennethMalumbaga" target="_blank" rel="noopener" class="project-link">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-tile reveal d1" tabindex="0"
+            data-project-title="BookSphere"
+            data-project-type="School Project"
+            data-project-image="assets/images/2.png"
+            data-project-description="A bookstore management system for inventory records, sales processing, customer information, and structured bookstore data management."
+            data-project-details="I focused on backend CRUD operations, database organization, form handling, and testing key workflows for inventory and sales records."
+            data-project-stack="PHP, MySQL, HTML, CSS, JavaScript"
+            data-project-role="Backend development, database design, functional testing"
+            data-project-github="https://github.com/KennethMalumbaga"
+            data-project-demo="">
+            <div class="project-tile-num">02 / 04 <span class="p-badge">School Project</span></div>
+            <div class="project-photo"><img src="assets/images/2.png" alt="BookSphere project preview" loading="lazy"></div>
+            <h3 class="project-tile-name">BookSphere</h3>
+            <p class="project-tile-desc">Bookstore management system for inventory, customer records, and sales-related workflows.</p>
+            <div class="project-meta"><span>Role</span><strong>Backend / Database / Testing</strong></div>
+            <div class="project-tile-stack"><span class="stack-pill">PHP</span><span class="stack-pill">MySQL</span><span class="stack-pill">HTML</span></div>
+            <div class="project-actions">
+              <button class="project-detail-btn" type="button">View Details</button>
+              <a href="https://github.com/KennethMalumbaga" target="_blank" rel="noopener" class="project-link">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-tile reveal d2" tabindex="0"
+            data-project-title="Panabo Fitness Gym System"
+            data-project-type="School Project"
+            data-project-image="assets/images/3.png"
+            data-project-description="A gym management system for member registrations, membership tracking, schedules, and payment-related records."
+            data-project-details="This project strengthened my experience with database tables, admin workflows, member records, and manual validation of core system features."
+            data-project-stack="PHP, MySQL, HTML, CSS"
+            data-project-role="Backend development, database management, regression testing"
+            data-project-github="https://github.com/KennethMalumbaga"
+            data-project-demo="">
+            <div class="project-tile-num">03 / 04 <span class="p-badge">School Project</span></div>
+            <div class="project-photo"><img src="assets/images/3.png" alt="Panabo Fitness Gym System project preview" loading="lazy"></div>
+            <h3 class="project-tile-name">Panabo Fitness Gym System</h3>
+            <p class="project-tile-desc">Gym administration system for membership, schedule, and payment record handling.</p>
+            <div class="project-meta"><span>Role</span><strong>Backend / Records / QA</strong></div>
+            <div class="project-tile-stack"><span class="stack-pill">PHP</span><span class="stack-pill">MySQL</span><span class="stack-pill">CSS</span></div>
+            <div class="project-actions">
+              <button class="project-detail-btn" type="button">View Details</button>
+              <a href="https://github.com/KennethMalumbaga" target="_blank" rel="noopener" class="project-link">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-tile reveal d3" tabindex="0"
+            data-project-title="TaskFlow"
+            data-project-type="Internship Project"
+            data-project-image="assets/images/4.png"
+            data-project-description="A task management system created during internship work, supporting project organization, task assignment, progress tracking, and team coordination."
+            data-project-details="I contributed to backend-oriented features, database-backed task records, workflow testing, issue reporting, and support for users during project use."
+            data-project-stack="PHP, MySQL, HTML, CSS, JavaScript"
+            data-project-role="Backend support, QA testing, issue tracking, user support"
+            data-project-github="https://github.com/KennethMalumbaga"
+            data-project-demo="">
+            <div class="project-tile-num">04 / 04 <span class="p-badge p-badge-internship">Internship Project</span></div>
+            <div class="project-photo"><img src="assets/images/4.png" alt="TaskFlow project preview" loading="lazy"></div>
+            <h3 class="project-tile-name">TaskFlow</h3>
+            <p class="project-tile-desc">Task management system for assigning work, tracking progress, and organizing team responsibilities.</p>
+            <div class="project-meta"><span>Role</span><strong>Backend / QA / Support</strong></div>
+            <div class="project-tile-stack"><span class="stack-pill">PHP</span><span class="stack-pill">MySQL</span><span class="stack-pill">JavaScript</span></div>
+            <div class="project-actions">
+              <button class="project-detail-btn" type="button">View Details</button>
+              <a href="https://github.com/KennethMalumbaga" target="_blank" rel="noopener" class="project-link">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section section-alt" aria-labelledby="certificates-title">
+      <div class="section-inner">
+        <div class="s-label">
+          <span class="s-label-num">04</span>
+          <div class="s-label-line" aria-hidden="true"></div>
+          <span class="s-label-text">Trainings &amp; Certificates</span>
+        </div>
+        <h2 id="certificates-title" class="s-title">Continuous <em>learning</em></h2>
+
+        <div class="cert-grid">
+          <article class="cert-card reveal" tabindex="0" data-cert-image="assets/images/cert 1.png" data-cert-title="Cybersecurity Essentials" data-cert-type="Cisco" data-cert-org="Cisco Networking Academy - Davao del Norte State College" data-cert-date="May 21, 2025">
+            <div class="cert-img-wrap"><img src="assets/images/cert 1.png" alt="Cybersecurity Essentials certificate" loading="lazy"><div class="cert-overlay">View Certificate</div></div>
+            <div class="cert-info"><span class="cert-badge">Cisco</span><h3 class="cert-name">Cybersecurity Essentials</h3><p class="cert-org">Cisco Networking Academy</p><p class="cert-date">May 21, 2025</p></div>
+          </article>
+          <article class="cert-card reveal d1" tabindex="0" data-cert-image="assets/images/cert 2.png" data-cert-title="Ethical Hacker" data-cert-type="Cisco" data-cert-org="Cisco Networking Academy - Davao del Norte State College" data-cert-date="Dec 04, 2025">
+            <div class="cert-img-wrap"><img src="assets/images/cert 2.png" alt="Ethical Hacker certificate" loading="lazy"><div class="cert-overlay">View Certificate</div></div>
+            <div class="cert-info"><span class="cert-badge">Cisco</span><h3 class="cert-name">Ethical Hacker</h3><p class="cert-org">Cisco Networking Academy</p><p class="cert-date">Dec 04, 2025</p></div>
+          </article>
+          <article class="cert-card reveal d2" tabindex="0" data-cert-image="assets/images/cert 3.png" data-cert-title="The Power of Color in Graphic Design" data-cert-type="DNSC" data-cert-org="DNSC Advanced Seminar Series - Davao del Norte State College" data-cert-date="Nov 5, 2025">
+            <div class="cert-img-wrap"><img src="assets/images/cert 3.png" alt="The Power of Color in Graphic Design certificate" loading="lazy"><div class="cert-overlay">View Certificate</div></div>
+            <div class="cert-info"><span class="cert-badge">DNSC</span><h3 class="cert-name">The Power of Color in Graphic Design</h3><p class="cert-org">DNSC Advanced Seminar Series</p><p class="cert-date">Nov 5, 2025</p></div>
+          </article>
+          <article class="cert-card reveal d3" tabindex="0" data-cert-image="assets/images/cert 4.png" data-cert-title="Journey from Science Practitioner to IT Specialist" data-cert-type="DNSC" data-cert-org="DNSC Advanced Seminar Series - Davao del Norte State College" data-cert-date="Oct 8, 2025">
+            <div class="cert-img-wrap"><img src="assets/images/cert 4.png" alt="Journey from Science Practitioner to IT Specialist certificate" loading="lazy"><div class="cert-overlay">View Certificate</div></div>
+            <div class="cert-info"><span class="cert-badge">DNSC</span><h3 class="cert-name">Journey from Science Practitioner to IT Specialist</h3><p class="cert-org">DNSC Advanced Seminar Series</p><p class="cert-date">Oct 8, 2025</p></div>
+          </article>
+          <article class="cert-card reveal" tabindex="0" data-cert-image="assets/images/cert 5.jpg" data-cert-title="Level 1 DICT Examination" data-cert-type="DNSC" data-cert-org="Davao del Norte State College - Institute of Computing" data-cert-date="Jun 11, 2025">
+            <div class="cert-img-wrap"><img src="assets/images/cert 5.jpg" alt="Level 1 DICT Examination certificate" loading="lazy"><div class="cert-overlay">View Certificate</div></div>
+            <div class="cert-info"><span class="cert-badge">DNSC</span><h3 class="cert-name">Level 1 DICT Examination</h3><p class="cert-org">DNSC Institute of Computing</p><p class="cert-date">Jun 11, 2025</p></div>
+          </article>
+          <article class="cert-card reveal d1" tabindex="0" data-cert-image="assets/images/cert 6.jfif" data-cert-title="Certificate of Participation" data-cert-type="Level App" data-cert-org="Level App - Stratosfera" data-cert-date="May 2025">
+            <div class="cert-img-wrap"><img src="assets/images/cert 6.jfif" alt="Certificate of Participation - Level App" loading="lazy"><div class="cert-overlay">View Certificate</div></div>
+            <div class="cert-info"><span class="cert-badge">Level App</span><h3 class="cert-name">Certificate of Participation</h3><p class="cert-org">Level App - Stratosfera</p><p class="cert-date">May 2025</p></div>
+          </article>
+          <article class="cert-card reveal d2" tabindex="0" data-cert-image="assets/images/cert 7.jpg" data-cert-title="On-the-Job Training (486 Hours)" data-cert-type="Internship" data-cert-org="Nehemiah Solutions Corporation - Software Research & Development" data-cert-date="May 15, 2026">
+            <div class="cert-img-wrap"><img src="assets/images/cert 7.jpg" alt="On-the-Job Training certificate" loading="lazy"><div class="cert-overlay">View Certificate</div></div>
+            <div class="cert-info"><span class="cert-badge cert-badge-alt">Internship</span><h3 class="cert-name">On-the-Job Training (486 Hours)</h3><p class="cert-org">Nehemiah Solutions Corporation</p><p class="cert-date">May 15, 2026</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="section-inner">
+        <div class="s-label">
+          <span class="s-label-num">05</span>
+          <div class="s-label-line" aria-hidden="true"></div>
+          <span class="s-label-text">Contact</span>
+        </div>
+        <h2 id="contact-title" class="s-title">Let's <em>connect</em></h2>
+
+        <div class="contact-layout">
+          <div class="contact-left reveal">
+            <div class="big-text">Open to backend,<br>QA, and IT support<br><em>opportunities.</em></div>
+            <p>I am available for entry-level and junior roles where I can contribute to backend systems, database work, QA testing, troubleshooting, and technical support.</p>
+
+            <div class="contact-links">
+              <a href="mailto:malumbagakenneth16@gmail.com" class="contact-link" aria-label="Email Kenneth Bryan Malumbaga">
+                <span class="contact-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></span>
+                <span><span class="contact-link-label">Email</span><span class="contact-link-value">malumbagakenneth16@gmail.com</span></span>
+                <span class="contact-link-arrow" aria-hidden="true">-></span>
+              </a>
+              <div class="contact-link contact-static">
+                <span class="contact-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013 5.18 2 2 0 015 3h3a2 2 0 012 1.72c.12.9.32 1.77.6 2.6a2 2 0 01-.45 2.11L8.91 10.67a16 16 0 004.42 4.42l1.24-1.24a2 2 0 012.11-.45c.83.28 1.7.48 2.6.6A2 2 0 0122 16.92z"/></svg></span>
+                <span><span class="contact-link-label">Phone</span><span class="contact-link-value">Available upon request</span></span>
+              </div>
+              <a href="https://github.com/KennethMalumbaga" target="_blank" rel="noopener" class="contact-link" aria-label="Open Kenneth GitHub profile">
+                <span class="contact-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg></span>
+                <span><span class="contact-link-label">GitHub</span><span class="contact-link-value">github.com/KennethMalumbaga</span></span>
+                <span class="contact-link-arrow" aria-hidden="true">-></span>
+              </a>
+              <a href="https://www.linkedin.com/in/kenneth-bryan-malumbaga-b922a8402/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Open Kenneth LinkedIn profile">
+                <span class="contact-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg></span>
+                <span><span class="contact-link-label">LinkedIn</span><span class="contact-link-value">kenneth-bryan-malumbaga-b922a8402</span></span>
+                <span class="contact-link-arrow" aria-hidden="true">-></span>
+              </a>
+              <div class="contact-link contact-static">
+                <span class="contact-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg></span>
+                <span><span class="contact-link-label">Location</span><span class="contact-link-value">Davao City, Philippines</span></span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal d1" id="contact-form">
+            <div class="form-title">Send a Message</div>
+            <div class="f-grid">
+              <div class="f-row">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name">
+              </div>
+              <div class="f-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="your@email.com" autocomplete="email">
+              </div>
+            </div>
+            <div class="f-row">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="Role, project, or support request">
+            </div>
+            <div class="f-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about the opportunity or technical need..."></textarea>
+            </div>
+            <button class="btn-solid form-submit" type="submit">
+              <svg viewBox="0 0 20 20" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+    <div class="project-modal-backdrop" data-close-project-modal></div>
+    <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+      <button class="modal-close" type="button" aria-label="Close project preview" data-close-project-modal>
+        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+      </button>
+      <div class="project-modal-image-wrap"><img src="" alt="" id="project-modal-image"></div>
+      <div class="project-modal-content">
+        <div class="project-modal-type" id="project-modal-type"></div>
+        <h3 id="project-modal-title"></h3>
+        <p id="project-modal-description"></p>
+        <div class="project-modal-details">
+          <span>My Role</span>
+          <p id="project-modal-role"></p>
+        </div>
+        <div class="project-modal-details">
+          <span>Project Details</span>
+          <p id="project-modal-details"></p>
+        </div>
+        <div class="project-modal-stack" id="project-modal-stack"></div>
+        <div class="modal-actions">
+          <a href="#" class="btn-solid" id="project-modal-github" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" class="btn-outline" id="project-modal-demo" target="_blank" rel="noopener">Live Demo</a>
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- ─── FOOTER ─── -->
-<footer>
-  <div class="footer-left">
-    <svg viewBox="0 0 80 55" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:40px;height:28px;">
-      <path d="M8 48 L8 10 Q8 4 15 4 Q19 4 22 9 L40 40 L58 9 Q61 4 65 4 Q72 4 72 10 L72 28" stroke="#22c55e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M40 39 L72 48" stroke="#22c55e" stroke-width="7" stroke-linecap="round"/>
-      <path d="M40 39 L46 30" stroke="#22c55e" stroke-width="7" stroke-linecap="round"/>
-      <path d="M72 28 L40 48" stroke="#22c55e" stroke-width="7" stroke-linecap="round"/>
-    </svg>
-    <span class="footer-copy">© 2025 Kenneth Bryan Malumbaga · Davao City, PH</span>
+  <div class="cert-modal" id="cert-modal" aria-hidden="true">
+    <div class="cert-modal-backdrop" data-close-cert-modal></div>
+    <div class="cert-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+      <button class="modal-close" type="button" aria-label="Close certificate" data-close-cert-modal>
+        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+      </button>
+      <div class="cert-modal-image-wrap"><img src="" alt="" id="cert-modal-image"></div>
+      <div class="cert-modal-content">
+        <div class="cert-modal-type" id="cert-modal-type"></div>
+        <h3 id="cert-modal-title"></h3>
+        <p id="cert-modal-org"></p>
+        <div class="cert-modal-date" id="cert-modal-date"></div>
+      </div>
+    </div>
   </div>
-  <div class="footer-socials">
-    <a href="https://github.com/KennethMalumbaga" target="_blank" class="fsoc" title="GitHub">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
-    </a>
-    <a href="https://www.linkedin.com/in/kenneth-bryan-malumbaga-b922a8402/" target="_blank" rel="noopener noreferrer" class="fsoc" title="LinkedIn">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>
-    </a>
-    <a href="mailto:malumbagakenneth16@gmail.com" class="fsoc" title="Email">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-    </a>
-  </div>
-</footer>
 
-<script src="script.js"></script>
+  <button class="scroll-top" type="button" aria-label="Scroll to top">
+    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 4a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414l-3.293 3.293A1 1 0 114.293 9.293l5-5A1 1 0 0110 4z" clip-rule="evenodd"/></svg>
+  </button>
+
+  <footer>
+    <div class="footer-left">
+      <svg viewBox="0 0 80 55" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 48 L8 10 Q8 4 15 4 Q19 4 22 9 L40 40 L58 9 Q61 4 65 4 Q72 4 72 10 L72 28" stroke="#22c55e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M40 39 L72 48" stroke="#22c55e" stroke-width="7" stroke-linecap="round"/>
+        <path d="M40 39 L46 30" stroke="#22c55e" stroke-width="7" stroke-linecap="round"/>
+        <path d="M72 28 L40 48" stroke="#22c55e" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+      <span class="footer-copy">&copy; 2026 Kenneth Bryan D. Malumbaga - Davao City, PH</span>
+    </div>
+    <div class="footer-socials" aria-label="Social links">
+      <a href="https://github.com/KennethMalumbaga" target="_blank" rel="noopener" class="fsoc" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/kenneth-bryan-malumbaga-b922a8402/" target="_blank" rel="noopener noreferrer" class="fsoc" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>
+      </a>
+      <a href="mailto:malumbagakenneth16@gmail.com" class="fsoc" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
-
