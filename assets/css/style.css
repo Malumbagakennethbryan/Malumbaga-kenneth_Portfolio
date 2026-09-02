@@ -164,7 +164,7 @@ body::before {
   border-radius: 50%;
   animation: blink 2s ease infinite;
 }
-.hire-me-btn {
+.hire-me-btn, .nav-right a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +180,7 @@ body::before {
   box-shadow: 0 12px 28px rgba(34,197,94,0.18);
   transition: transform 0.22s, box-shadow 0.22s, background 0.22s;
 }
-.hire-me-btn:hover, .hire-me-btn:focus-visible {
+.hire-me-btn:hover, .hire-me-btn:focus-visible, .nav-right a:hover, .nav-right a:focus-visible {
   background: #1dba52;
   transform: translateY(-2px);
   box-shadow: 0 16px 36px rgba(34,197,94,0.28);
